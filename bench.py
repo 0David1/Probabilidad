@@ -40,9 +40,9 @@ def fib(n: int) -> int:
     return fib(n-1) + fib(n-2)
 
 
-output_file = "bench_fib.json"
-batch_sizes = [1, 5, 10, 50]
-ns = [2, 4, 10, 20, 30]
+output_file = "bench_fib2.json"
+batch_sizes = [1]
+ns = [40, 50]
 combinations = product(ns, batch_sizes)
 runs = 500
 
